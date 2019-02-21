@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+
+import argparse
+import subprocess
+from colorama import Fore
+
+
+VFLAGS = ["--leak-check=full", "--track-origins=yes", "--show-reachable=yes"]
+
+def color_output(output):
+    return Fore.GREEN+output
+
+def call_valgrind(exec, flags=VFLAGS):
+    valgrind = subprocess.Popen(["valgrind", *flags, exec],
+                                stdin=subprocess.DEVNULL, 
+                                stdout=subprocess.PIPE, 
+                                stderr=subprocess.STDOUT)
+    out, _ = valgrind.communicate()
+    return out.decode("utf-8")
+
+def valgreen():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('exec', help='Executable file passed to Valgrind', type=str)
+    args = parser.parse_args()
+    output = call_valgrind(args.exec)
+    colored_output = color_output(output)
+    print(colored_output)
+
+
+if __name__ == "__main__":
+    valgreen()
