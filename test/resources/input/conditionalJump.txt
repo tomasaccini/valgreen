@@ -1,0 +1,21 @@
+==22== Conditional jump or move depends on uninitialised value(s)
+==22==    at 0x4C32D39: __strlen_sse2 (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22==    by 0x11D3DB: join (strutil.c:85)
+==22==    by 0x115D1C: test_join_unir_dos_Test::TestBody() (strutil_test.cc:195)
+==22==  Uninitialised value was created by a heap allocation
+==22==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22==    by 0x11D394: join (strutil.c:80)
+==22==    by 0x115D1C: test_join_unir_dos_Test::TestBody() (strutil_test.cc:195)
+==22== 
+==22== Conditional jump or move depends on uninitialised value(s)
+==22==    at 0x4C32996: strcat (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22==    by 0x11D426: join (strutil.c:96)
+==22==    by 0x115D1C: test_join_unir_dos_Test::TestBody() (strutil_test.cc:195)
+==22== 
+==22== Conditional jump or move depends on uninitialised value(s)
+==22==    at 0x4C329D0: strcat (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22==    by 0x11D45C: join (strutil.c:98)
+==22==    by 0x115D1C: test_join_unir_dos_Test::TestBody() (strutil_test.cc:195)
+==22==  Uninitialised value was created by a stack allocation
+==22==    at 0x11D348: join (strutil.c:64)
+==22== 

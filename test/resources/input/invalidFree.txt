@@ -1,0 +1,18 @@
+==31== Invalid free() / delete / delete[] / realloc()
+==31==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==31==    by 0x108B9E: heap_destruir (heap.c:94)
+==31==    by 0x109AD8: prueba_crear_arr (pruebas_catedra.c:271)
+==31==    by 0x109AD8: pruebas_heap_catedra (pruebas_catedra.c:283)
+==31==    by 0x108919: main (main.c:28)
+==31==  Address 0x531c440 is 0 bytes inside a block of size 80 free'd
+==31==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==31==    by 0x109A40: prueba_crear_arr (pruebas_catedra.c:259)
+==31==    by 0x109A40: pruebas_heap_catedra (pruebas_catedra.c:283)
+==31==    by 0x108919: main (main.c:28)
+==31==  Block was alloc'd at
+==31==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==31==    by 0x108E09: generar_arreglo (pruebas_catedra.c:33)
+==31==    by 0x1099E9: prueba_crear_arr (pruebas_catedra.c:253)
+==31==    by 0x1099E9: pruebas_heap_catedra (pruebas_catedra.c:283)
+==31==    by 0x108919: main (main.c:28)
+==31== 
