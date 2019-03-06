@@ -1,21 +1,20 @@
- [1mConditional jump or move depends on uninitialised value(s)[22m
+ [1mConditional jump or move depends on uninitialised value(s)[0m
     at __strlen_sse2 (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-    by join [32m(strutil.c:85)[30m
+    [31m[1mby join (strutil.c:85)[0m[39m
     by test_join_unir_dos_Test::TestBody() (strutil_test.cc:195)
   Uninitialised value was created by a heap allocation
     at malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-    by join [32m(strutil.c:80)[30m
+    [31m[1mby join (strutil.c:80)[0m[39m
     by test_join_unir_dos_Test::TestBody() (strutil_test.cc:195)
  
- [1mConditional jump or move depends on uninitialised value(s)[22m
+ [1mConditional jump or move depends on uninitialised value(s)[0m
     at strcat (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-    by join [32m(strutil.c:96)[30m
+    [31m[1mby join (strutil.c:96)[0m[39m
     by test_join_unir_dos_Test::TestBody() (strutil_test.cc:195)
  
- [1mConditional jump or move depends on uninitialised value(s)[22m
+ [1mConditional jump or move depends on uninitialised value(s)[0m
     at strcat (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-    by join [32m(strutil.c:98)[30m
+    [31m[1mby join (strutil.c:98)[0m[39m
     by test_join_unir_dos_Test::TestBody() (strutil_test.cc:195)
   Uninitialised value was created by a stack allocation
-    at join [32m(strutil.c:64)
-[30m 
+    [31m[1mat join (strutil.c:64)[0m[39m
