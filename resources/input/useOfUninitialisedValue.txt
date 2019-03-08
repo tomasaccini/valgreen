@@ -1,0 +1,13 @@
+==28== Use of uninitialised value of size 8
+==28==    at 0x403FAE: lista_iter_ver_actual (lista.c:141)
+==28==    by 0x40251B: prueba_iterador_tres_valores (pruebas_catedra.c:425)
+==28==    by 0x40251B: pruebas_lista_catedra (pruebas_catedra.c:832)
+==28==    by 0x4005FF: main (main.c:17)
+==28==  Uninitialised value was created by a heap allocation
+==28==    at 0x4C2DB8F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==28==    by 0x403DD5: nodo_crear (lista.c:45)
+==28==    by 0x403DD5: lista_insertar_primero (lista.c:75)
+==28==    by 0x40232E: prueba_iterador_tres_valores (pruebas_catedra.c:410)
+==28==    by 0x40232E: pruebas_lista_catedra (pruebas_catedra.c:832)
+==28==    by 0x4005FF: main (main.c:17)
+==28== 
