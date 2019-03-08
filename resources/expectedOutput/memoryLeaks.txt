@@ -1,182 +1,182 @@
-==28== 
-==28== HEAP SUMMARY:
-==28==     in use at exit: 360,720 bytes in 15,030 blocks
-==28==   total heap usage: 35,134 allocs, 20,104 frees, 1,194,124 bytes allocated
-==28== 
-==28== 24 bytes in 1 blocks are definitely lost in loss record 1 of 24
-==28==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28==    by 0x10B139: hash_guardar (hash.c:126)
-==28==    by 0x108FBF: prueba_hash_insertar (pruebas_catedra.c:56)
-==28==    by 0x108FBF: pruebas_hash_catedra (pruebas_catedra.c:477)
-==28==    by 0x10888A: main (main.c:23)
-==28== 
-==28== 24 bytes in 1 blocks are definitely lost in loss record 2 of 24
-==28==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28==    by 0x10B139: hash_guardar (hash.c:126)
-==28==    by 0x10912E: prueba_hash_insertar (pruebas_catedra.c:65)
-==28==    by 0x10912E: pruebas_hash_catedra (pruebas_catedra.c:477)
-==28==    by 0x10888A: main (main.c:23)
-==28== 
-==28== 24 bytes in 1 blocks are definitely lost in loss record 3 of 24
-==28==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28==    by 0x10B139: hash_guardar (hash.c:126)
-==28==    by 0x109236: prueba_hash_insertar (pruebas_catedra.c:71)
-==28==    by 0x109236: pruebas_hash_catedra (pruebas_catedra.c:477)
-==28==    by 0x10888A: main (main.c:23)
-==28== 
-==28== 24 bytes in 1 blocks are definitely lost in loss record 4 of 24
-==28==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28==    by 0x10B139: hash_guardar (hash.c:126)
-==28==    by 0x10934C: prueba_hash_reemplazar (pruebas_catedra.c:88)
-==28==    by 0x10934C: pruebas_hash_catedra (pruebas_catedra.c:478)
-==28==    by 0x10888A: main (main.c:23)
-==28== 
-==28== 24 bytes in 1 blocks are definitely lost in loss record 5 of 24
-==28==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28==    by 0x10B139: hash_guardar (hash.c:126)
-==28==    by 0x1093EE: prueba_hash_reemplazar (pruebas_catedra.c:91)
-==28==    by 0x1093EE: pruebas_hash_catedra (pruebas_catedra.c:478)
-==28==    by 0x10888A: main (main.c:23)
-==28== 
-==28== 24 bytes in 1 blocks are definitely lost in loss record 6 of 24
-==28==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28==    by 0x10B139: hash_guardar (hash.c:126)
-==28==    by 0x109693: prueba_hash_reemplazar_con_destruir (pruebas_catedra.c:121)
-==28==    by 0x109693: pruebas_hash_catedra (pruebas_catedra.c:479)
-==28==    by 0x10888A: main (main.c:23)
-==28== 
-==28== 24 bytes in 1 blocks are definitely lost in loss record 7 of 24
-==28==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28==    by 0x10B139: hash_guardar (hash.c:126)
-==28==    by 0x109735: prueba_hash_reemplazar_con_destruir (pruebas_catedra.c:124)
-==28==    by 0x109735: pruebas_hash_catedra (pruebas_catedra.c:479)
-==28==    by 0x10888A: main (main.c:23)
-==28== 
-==28== 24 bytes in 1 blocks are definitely lost in loss record 8 of 24
-==28==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28==    by 0x10B139: hash_guardar (hash.c:126)
-==28==    by 0x109998: prueba_hash_borrar (pruebas_catedra.c:150)
-==28==    by 0x109998: pruebas_hash_catedra (pruebas_catedra.c:480)
-==28==    by 0x10888A: main (main.c:23)
-==28== 
-==28== 24 bytes in 1 blocks are definitely lost in loss record 9 of 24
-==28==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28==    by 0x10B139: hash_guardar (hash.c:126)
-==28==    by 0x1099CC: prueba_hash_borrar (pruebas_catedra.c:151)
-==28==    by 0x1099CC: pruebas_hash_catedra (pruebas_catedra.c:480)
-==28==    by 0x10888A: main (main.c:23)
-==28== 
-==28== 24 bytes in 1 blocks are definitely lost in loss record 10 of 24
-==28==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28==    by 0x10B139: hash_guardar (hash.c:126)
-==28==    by 0x109A00: prueba_hash_borrar (pruebas_catedra.c:152)
-==28==    by 0x109A00: pruebas_hash_catedra (pruebas_catedra.c:480)
-==28==    by 0x10888A: main (main.c:23)
-==28== 
-==28== 24 bytes in 1 blocks are definitely lost in loss record 11 of 24
-==28==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28==    by 0x10B139: hash_guardar (hash.c:126)
-==28==    by 0x109E00: prueba_hash_borrar_con_destruir (pruebas_catedra.c:187)
-==28==    by 0x109E00: pruebas_hash_catedra (pruebas_catedra.c:481)
-==28==    by 0x10888A: main (main.c:23)
-==28== 
-==28== 24 bytes in 1 blocks are definitely lost in loss record 12 of 24
-==28==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28==    by 0x10B139: hash_guardar (hash.c:126)
-==28==    by 0x109E34: prueba_hash_borrar_con_destruir (pruebas_catedra.c:188)
-==28==    by 0x109E34: pruebas_hash_catedra (pruebas_catedra.c:481)
-==28==    by 0x10888A: main (main.c:23)
-==28== 
-==28== 24 bytes in 1 blocks are definitely lost in loss record 13 of 24
-==28==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28==    by 0x10B139: hash_guardar (hash.c:126)
-==28==    by 0x109E68: prueba_hash_borrar_con_destruir (pruebas_catedra.c:189)
-==28==    by 0x109E68: pruebas_hash_catedra (pruebas_catedra.c:481)
-==28==    by 0x10888A: main (main.c:23)
-==28== 
-==28== 24 bytes in 1 blocks are definitely lost in loss record 14 of 24
-==28==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28==    by 0x10B139: hash_guardar (hash.c:126)
-==28==    by 0x109FB4: prueba_reutilizar_campo_borrado (pruebas_catedra.c:208)
-==28==    by 0x109FB4: pruebas_hash_catedra (pruebas_catedra.c:482)
-==28==    by 0x10888A: main (main.c:23)
-==28== 
-==28== 24 bytes in 1 blocks are definitely lost in loss record 15 of 24
-==28==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28==    by 0x10B139: hash_guardar (hash.c:126)
-==28==    by 0x10A087: prueba_reutilizar_campo_borrado (pruebas_catedra.c:212)
-==28==    by 0x10A087: pruebas_hash_catedra (pruebas_catedra.c:482)
-==28==    by 0x10888A: main (main.c:23)
-==28== 
-==28== 24 bytes in 1 blocks are definitely lost in loss record 16 of 24
-==28==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28==    by 0x10B139: hash_guardar (hash.c:126)
-==28==    by 0x10A108: prueba_hash_clave_vacia (pruebas_catedra.c:226)
-==28==    by 0x10A108: pruebas_hash_catedra (pruebas_catedra.c:483)
-==28==    by 0x10888A: main (main.c:23)
-==28== 
-==28== 24 bytes in 1 blocks are definitely lost in loss record 17 of 24
-==28==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28==    by 0x10B139: hash_guardar (hash.c:126)
-==28==    by 0x10A245: prueba_hash_valor_null (pruebas_catedra.c:243)
-==28==    by 0x10A245: pruebas_hash_catedra (pruebas_catedra.c:484)
-==28==    by 0x10888A: main (main.c:23)
-==28== 
-==28== 24 bytes in 1 blocks are definitely lost in loss record 18 of 24
-==28==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28==    by 0x10B139: hash_guardar (hash.c:126)
-==28==    by 0x10A53D: prueba_hash_iterar (pruebas_catedra.c:354)
-==28==    by 0x10A53D: pruebas_hash_catedra (pruebas_catedra.c:487)
-==28==    by 0x10888A: main (main.c:23)
-==28== 
-==28== 24 bytes in 1 blocks are definitely lost in loss record 19 of 24
-==28==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28==    by 0x10B139: hash_guardar (hash.c:126)
-==28==    by 0x10A571: prueba_hash_iterar (pruebas_catedra.c:355)
-==28==    by 0x10A571: pruebas_hash_catedra (pruebas_catedra.c:487)
-==28==    by 0x10888A: main (main.c:23)
-==28== 
-==28== 24 bytes in 1 blocks are definitely lost in loss record 20 of 24
-==28==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28==    by 0x10B139: hash_guardar (hash.c:126)
-==28==    by 0x10A5A5: prueba_hash_iterar (pruebas_catedra.c:356)
-==28==    by 0x10A5A5: pruebas_hash_catedra (pruebas_catedra.c:487)
-==28==    by 0x10888A: main (main.c:23)
-==28== 
-==28== 240 bytes in 10 blocks are definitely lost in loss record 21 of 24
-==28==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28==    by 0x10B139: hash_guardar (hash.c:126)
-==28==    by 0x10A462: prueba_hash_clave_larga (pruebas_catedra.c:265)
-==28==    by 0x10A462: pruebas_hash_catedra (pruebas_catedra.c:485)
-==28==    by 0x10888A: main (main.c:23)
-==28== 
-==28== 120,000 bytes in 5,000 blocks are definitely lost in loss record 22 of 24
-==28==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28==    by 0x10B139: hash_guardar (hash.c:126)
-==28==    by 0x108A5E: prueba_hash_volumen.constprop.1 (pruebas_catedra.c:292)
-==28==    by 0x10A512: pruebas_hash_catedra (pruebas_catedra.c:486)
-==28==    by 0x10888A: main (main.c:23)
-==28== 
-==28== 120,000 bytes in 5,000 blocks are definitely lost in loss record 23 of 24
-==28==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28==    by 0x10B139: hash_guardar (hash.c:126)
-==28==    by 0x108C14: prueba_hash_volumen.constprop.1 (pruebas_catedra.c:326)
-==28==    by 0x10A512: pruebas_hash_catedra (pruebas_catedra.c:486)
-==28==    by 0x10888A: main (main.c:23)
-==28== 
-==28== 120,000 bytes in 5,000 blocks are definitely lost in loss record 24 of 24
-==28==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==28==    by 0x10B139: hash_guardar (hash.c:126)
-==28==    by 0x10AA22: prueba_hash_iterar_volumen (pruebas_catedra.c:417)
-==28==    by 0x10AA22: pruebas_hash_catedra (pruebas_catedra.c:488)
-==28==    by 0x10888A: main (main.c:23)
-==28== 
-==28== LEAK SUMMARY:
-==28==    definitely lost: 360,720 bytes in 15,030 blocks
-==28==    indirectly lost: 0 bytes in 0 blocks
-==28==      possibly lost: 0 bytes in 0 blocks
-==28==    still reachable: 0 bytes in 0 blocks
-==28==         suppressed: 0 bytes in 0 blocks
-==28== 
-==28== For counts of detected and suppressed errors, rerun with: -v
-==28== ERROR SUMMARY: 26 errors from 26 contexts (suppressed: 0 from 0)
+    [1m[0m
+ [1mHEAP SUMMARY:[0m
+    [1min use at exit: 360,720 bytes in 15,030 blocks[0m
+    [1mtotal heap usage: 35,134 allocs, 20,104 frees, 1,194,124 bytes allocated[0m
+    [1m[0m
+ [1m1-24 bytes in 1 blocks are definitely lost in loss record 1 of 24[0m
+   at malloc [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[31m[1mby hash_guardar (hash.c:126)[0m[39m[39m
+    [90mby prueba_hash_insertar (pruebas_catedra.c:56)[39m
+    [90mby pruebas_hash_catedra (pruebas_catedra.c:477)[39m
+    [90mby main (main.c:23)[39m
+    [1m[0m
+ [1m2-24 bytes in 1 blocks are definitely lost in loss record 2 of 24[0m
+   at malloc [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[31m[1mby hash_guardar (hash.c:126)[0m[39m[39m
+    [90mby prueba_hash_insertar (pruebas_catedra.c:65)[39m
+    [90mby pruebas_hash_catedra (pruebas_catedra.c:477)[39m
+    [90mby main (main.c:23)[39m
+    [1m[0m
+ [1m3-24 bytes in 1 blocks are definitely lost in loss record 3 of 24[0m
+   at malloc [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[31m[1mby hash_guardar (hash.c:126)[0m[39m[39m
+    [90mby prueba_hash_insertar (pruebas_catedra.c:71)[39m
+    [90mby pruebas_hash_catedra (pruebas_catedra.c:477)[39m
+    [90mby main (main.c:23)[39m
+    [1m[0m
+ [1m4-24 bytes in 1 blocks are definitely lost in loss record 4 of 24[0m
+   at malloc [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[31m[1mby hash_guardar (hash.c:126)[0m[39m[39m
+    [90mby prueba_hash_reemplazar (pruebas_catedra.c:88)[39m
+    [90mby pruebas_hash_catedra (pruebas_catedra.c:478)[39m
+    [90mby main (main.c:23)[39m
+    [1m[0m
+ [1m5-24 bytes in 1 blocks are definitely lost in loss record 5 of 24[0m
+   at malloc [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[31m[1mby hash_guardar (hash.c:126)[0m[39m[39m
+    [90mby prueba_hash_reemplazar (pruebas_catedra.c:91)[39m
+    [90mby pruebas_hash_catedra (pruebas_catedra.c:478)[39m
+    [90mby main (main.c:23)[39m
+    [1m[0m
+ [1m6-24 bytes in 1 blocks are definitely lost in loss record 6 of 24[0m
+   at malloc [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[31m[1mby hash_guardar (hash.c:126)[0m[39m[39m
+    [90mby prueba_hash_reemplazar_con_destruir (pruebas_catedra.c:121)[39m
+    [90mby pruebas_hash_catedra (pruebas_catedra.c:479)[39m
+    [90mby main (main.c:23)[39m
+    [1m[0m
+ [1m7-24 bytes in 1 blocks are definitely lost in loss record 7 of 24[0m
+   at malloc [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[31m[1mby hash_guardar (hash.c:126)[0m[39m[39m
+    [90mby prueba_hash_reemplazar_con_destruir (pruebas_catedra.c:124)[39m
+    [90mby pruebas_hash_catedra (pruebas_catedra.c:479)[39m
+    [90mby main (main.c:23)[39m
+    [1m[0m
+ [1m8-24 bytes in 1 blocks are definitely lost in loss record 8 of 24[0m
+   at malloc [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[31m[1mby hash_guardar (hash.c:126)[0m[39m[39m
+    [90mby prueba_hash_borrar (pruebas_catedra.c:150)[39m
+    [90mby pruebas_hash_catedra (pruebas_catedra.c:480)[39m
+    [90mby main (main.c:23)[39m
+    [1m[0m
+ [1m9-24 bytes in 1 blocks are definitely lost in loss record 9 of 24[0m
+   at malloc [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[31m[1mby hash_guardar (hash.c:126)[0m[39m[39m
+    [90mby prueba_hash_borrar (pruebas_catedra.c:151)[39m
+    [90mby pruebas_hash_catedra (pruebas_catedra.c:480)[39m
+    [90mby main (main.c:23)[39m
+    [1m[0m
+ [1m10-24 bytes in 1 blocks are definitely lost in loss record 10 of 24[0m
+   at malloc [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[31m[1mby hash_guardar (hash.c:126)[0m[39m[39m
+    [90mby prueba_hash_borrar (pruebas_catedra.c:152)[39m
+    [90mby pruebas_hash_catedra (pruebas_catedra.c:480)[39m
+    [90mby main (main.c:23)[39m
+    [1m[0m
+ [1m11-24 bytes in 1 blocks are definitely lost in loss record 11 of 24[0m
+   at malloc [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[31m[1mby hash_guardar (hash.c:126)[0m[39m[39m
+    [90mby prueba_hash_borrar_con_destruir (pruebas_catedra.c:187)[39m
+    [90mby pruebas_hash_catedra (pruebas_catedra.c:481)[39m
+    [90mby main (main.c:23)[39m
+    [1m[0m
+ [1m12-24 bytes in 1 blocks are definitely lost in loss record 12 of 24[0m
+   at malloc [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[31m[1mby hash_guardar (hash.c:126)[0m[39m[39m
+    [90mby prueba_hash_borrar_con_destruir (pruebas_catedra.c:188)[39m
+    [90mby pruebas_hash_catedra (pruebas_catedra.c:481)[39m
+    [90mby main (main.c:23)[39m
+    [1m[0m
+ [1m13-24 bytes in 1 blocks are definitely lost in loss record 13 of 24[0m
+   at malloc [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[31m[1mby hash_guardar (hash.c:126)[0m[39m[39m
+    [90mby prueba_hash_borrar_con_destruir (pruebas_catedra.c:189)[39m
+    [90mby pruebas_hash_catedra (pruebas_catedra.c:481)[39m
+    [90mby main (main.c:23)[39m
+    [1m[0m
+ [1m14-24 bytes in 1 blocks are definitely lost in loss record 14 of 24[0m
+   at malloc [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[31m[1mby hash_guardar (hash.c:126)[0m[39m[39m
+    [90mby prueba_reutilizar_campo_borrado (pruebas_catedra.c:208)[39m
+    [90mby pruebas_hash_catedra (pruebas_catedra.c:482)[39m
+    [90mby main (main.c:23)[39m
+    [1m[0m
+ [1m15-24 bytes in 1 blocks are definitely lost in loss record 15 of 24[0m
+   at malloc [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[31m[1mby hash_guardar (hash.c:126)[0m[39m[39m
+    [90mby prueba_reutilizar_campo_borrado (pruebas_catedra.c:212)[39m
+    [90mby pruebas_hash_catedra (pruebas_catedra.c:482)[39m
+    [90mby main (main.c:23)[39m
+    [1m[0m
+ [1m16-24 bytes in 1 blocks are definitely lost in loss record 16 of 24[0m
+   at malloc [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[31m[1mby hash_guardar (hash.c:126)[0m[39m[39m
+    [90mby prueba_hash_clave_vacia (pruebas_catedra.c:226)[39m
+    [90mby pruebas_hash_catedra (pruebas_catedra.c:483)[39m
+    [90mby main (main.c:23)[39m
+    [1m[0m
+ [1m17-24 bytes in 1 blocks are definitely lost in loss record 17 of 24[0m
+   at malloc [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[31m[1mby hash_guardar (hash.c:126)[0m[39m[39m
+    [90mby prueba_hash_valor_null (pruebas_catedra.c:243)[39m
+    [90mby pruebas_hash_catedra (pruebas_catedra.c:484)[39m
+    [90mby main (main.c:23)[39m
+    [1m[0m
+ [1m18-24 bytes in 1 blocks are definitely lost in loss record 18 of 24[0m
+   at malloc [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[31m[1mby hash_guardar (hash.c:126)[0m[39m[39m
+    [90mby prueba_hash_iterar (pruebas_catedra.c:354)[39m
+    [90mby pruebas_hash_catedra (pruebas_catedra.c:487)[39m
+    [90mby main (main.c:23)[39m
+    [1m[0m
+ [1m19-24 bytes in 1 blocks are definitely lost in loss record 19 of 24[0m
+   at malloc [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[31m[1mby hash_guardar (hash.c:126)[0m[39m[39m
+    [90mby prueba_hash_iterar (pruebas_catedra.c:355)[39m
+    [90mby pruebas_hash_catedra (pruebas_catedra.c:487)[39m
+    [90mby main (main.c:23)[39m
+    [1m[0m
+ [1m20-24 bytes in 1 blocks are definitely lost in loss record 20 of 24[0m
+   at malloc [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[31m[1mby hash_guardar (hash.c:126)[0m[39m[39m
+    [90mby prueba_hash_iterar (pruebas_catedra.c:356)[39m
+    [90mby pruebas_hash_catedra (pruebas_catedra.c:487)[39m
+    [90mby main (main.c:23)[39m
+    [1m[0m
+ [1m21-240 bytes in 10 blocks are definitely lost in loss record 21 of 24[0m
+   at malloc [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[31m[1mby hash_guardar (hash.c:126)[0m[39m[39m
+    [90mby prueba_hash_clave_larga (pruebas_catedra.c:265)[39m
+    [90mby pruebas_hash_catedra (pruebas_catedra.c:485)[39m
+    [90mby main (main.c:23)[39m
+    [1m[0m
+ [1m22-120,000 bytes in 5,000 blocks are definitely lost in loss record 22 of 24[0m
+   at malloc [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[31m[1mby hash_guardar (hash.c:126)[0m[39m[39m
+    [90mby prueba_hash_volumen.constprop.1 (pruebas_catedra.c:292)[39m
+    [90mby pruebas_hash_catedra (pruebas_catedra.c:486)[39m
+    [90mby main (main.c:23)[39m
+    [1m[0m
+ [1m23-120,000 bytes in 5,000 blocks are definitely lost in loss record 23 of 24[0m
+   at malloc [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[31m[1mby hash_guardar (hash.c:126)[0m[39m[39m
+    [90mby prueba_hash_volumen.constprop.1 (pruebas_catedra.c:326)[39m
+    [90mby pruebas_hash_catedra (pruebas_catedra.c:486)[39m
+    [90mby main (main.c:23)[39m
+    [1m[0m
+ [1m24-120,000 bytes in 5,000 blocks are definitely lost in loss record 24 of 24[0m
+   at malloc [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[31m[1mby hash_guardar (hash.c:126)[0m[39m[39m
+    [90mby prueba_hash_iterar_volumen (pruebas_catedra.c:417)[39m
+    [90mby pruebas_hash_catedra (pruebas_catedra.c:488)[39m
+    [90mby main (main.c:23)[39m
+    [1m[0m
+    [90mLEAK SUMMARY:[39m
+    [90mdefinitely lost: 360,720 bytes in 15,030 blocks[39m
+    [90mindirectly lost: 0 bytes in 0 blocks[39m
+    [90mpossibly lost: 0 bytes in 0 blocks[39m
+    [90mstill reachable: 0 bytes in 0 blocks[39m
+    [90msuppressed: 0 bytes in 0 blocks[39m
+    [1m[0m
+    [90mFor counts of detected and suppressed errors, rerun with: -v[39m
+    [90mERROR SUMMARY: 26 errors from 26 contexts (suppressed: 0 from 0)[39m

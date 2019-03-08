@@ -1,18 +1,18 @@
-==31== Invalid free() / delete / delete[] / realloc()
-==31==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==31==    by 0x108B9E: heap_destruir [32m(heap.c:94)
-[30m==31==    by 0x109AD8: prueba_crear_arr (pruebas_catedra.c:271)
-==31==    by 0x109AD8: pruebas_heap_catedra (pruebas_catedra.c:283)
-==31==    by 0x108919: main (main.c:28)
-==31==  Address 0x531c440 is 0 bytes inside a block of size 80 free'd
-==31==    at 0x4C30D3B: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==31==    by 0x109A40: prueba_crear_arr [32m(pruebas_catedra.c:259)
-[30m==31==    by 0x109A40: pruebas_heap_catedra (pruebas_catedra.c:283)
-==31==    by 0x108919: main (main.c:28)
-==31==  Block was alloc'd at
-==31==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-==31==    by 0x108E09: generar_arreglo [32m(pruebas_catedra.c:33)
-[30m==31==    by 0x1099E9: prueba_crear_arr (pruebas_catedra.c:253)
-==31==    by 0x1099E9: pruebas_heap_catedra (pruebas_catedra.c:283)
-==31==    by 0x108919: main (main.c:28)
-==31== 
+ [1m1-Invalid free() / delete / delete[] / realloc()[0m
+   at free [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[31m[1mby heap_destruir (heap.c:94)[0m[39m[39m
+    [90mby prueba_crear_arr (pruebas_catedra.c:271)[39m
+    [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
+    [90mby main (main.c:28)[39m
+   [1mAddress 0x531c440 is 0 bytes inside a block of size 80 free'd[0m
+   at free [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[32mby prueba_crear_arr (pruebas_catedra.c:259)[39m[39m
+    [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
+    [90mby main (main.c:28)[39m
+   [1mBlock was alloc'd at[0m
+   at malloc [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
+    [90m[32mby generar_arreglo (pruebas_catedra.c:33)[39m[39m
+    [90mby prueba_crear_arr (pruebas_catedra.c:253)[39m
+    [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
+    [90mby main (main.c:28)[39m
+    [1m[0m

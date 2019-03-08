@@ -44,9 +44,31 @@ class Beautifier:
         self.colorer = Colorer()
         self.styler = Styler()
         self.textEditor = TextEditor()
-        self.problemTitles = ["Conditional jump or move depends on uninitialised value(s)"]
-        self.rootCauseTitles = ["Uninitialised value was created by a heap allocation", "Uninitialised value was created by a stack allocation"]
-    
+        self.problemTitles = ["Conditional jump or move depends on uninitialised value(s)", "Invalid free() / delete / delete[] / realloc()"]
+        self.problemTitlesRegex = [r'Invalid write of size .*', r'Invalid read of size .*', r'Use of uninitialised value of size .*', r'.* bytes in .* blocks are .* in loss record .* of .*']
+        self.rootCauseTitles = ["Uninitialised value was created by a heap allocation", "Uninitialised value was created by a stack allocation", "Block was alloc'd at"]
+        self.rootCauseTitlesRegex = [r'Address 0x.* is .* bytes .* a block of size .* free\'d']
+
+    def _isProblemTitle(self, line):
+        if (line == ''):
+            return False
+        if (line in self.problemTitles):
+            return True
+        for reg in self.problemTitlesRegex:
+            if (re.sub(reg, '', line) == ''):
+                return True
+        return False
+
+    def _isRootCause(self, line):
+        if (line == ''):
+            return False
+        if (line in self.rootCauseTitles):
+            return True
+        for reg in self.rootCauseTitlesRegex:
+            if (re.sub(reg, '', line) == ''):
+                return True
+        return False
+
     def process(self, input_string):
         lines = input_string.split('\n')
         result = ""
@@ -57,8 +79,17 @@ class Beautifier:
         first_importat_line_of_root_cause = False
         for line in lines:
             temp = self.textEditor.remove_address(self.textEditor.remove_PID(line))
+            # Is HEAP SUMMARY header?
+            if (temp == "HEAP SUMMARY:"):
+                temp = self.textEditor.add_spaces(self.styler.add_bold(temp), 1)
+                result += temp + '\n'
+                continue
+            if (re.sub(r'in use at exit: .* bytes in .* blocks', '', temp) == '' or re.sub(r'total heap usage: .* allocs, .* frees, .* bytes allocated', '', temp) == ''):
+                temp = self.textEditor.add_spaces(self.styler.add_bold(temp), 4)
+                result += temp + '\n'
+                continue
             # Is title?
-            if (temp in self.problemTitles):
+            if (self._isProblemTitle(temp)):
                 temp = self.textEditor.add_spaces(self.styler.add_bold(self.textEditor.add_number(temp, problem_numbering)), 1)
                 problem_numbering += 1
                 first_line_of_problem = True
@@ -66,7 +97,7 @@ class Beautifier:
                 result += temp + '\n'
                 continue
             # Is root cause?
-            if (temp in self.rootCauseTitles):
+            if (self._isRootCause(temp)):
                 temp = self.textEditor.add_spaces(self.styler.add_bold(temp), 3)
                 first_line_of_root_cause = True
                 first_importat_line_of_root_cause = True
@@ -97,8 +128,10 @@ class Beautifier:
             elif (first_line_of_root_cause):
                 temp = self.textEditor.add_spaces(temp, 3)
                 first_line_of_root_cause = False
+            # Else it is a secondary line, will be shown in grey
             else:
                 temp = self.textEditor.add_spaces(self.colorer.add_grey_color(temp), 4)
             result += temp + '\n'
-        print("'"+result+"'")
+        print(result)
+        #print("=========================================================")
         return result

@@ -25,13 +25,18 @@ def text_editor_test():
     assert text_editor.add_spaces(input_string, 3) == '   ' + input_string, "Add space failed"
     assert text_editor.remove_address(address_string) == "by join (strutil.c:85)", "Remove address failed"
 
-def file_processing():
+def _file_processing(file_name):
     beautifier = Beautifier()
-    input_file = open('resources/input/conditionalJump.txt', 'r')
-    expected_output_file = open('resources/expectedOutput/conditionalJump.txt', 'r')
+    input_file = open('resources/input/' + file_name, 'r')
+    expected_output_file = open('resources/expectedOutput/' + file_name, 'r')
     input_content = input_file.read()
     expected_output_content = expected_output_file.read()
-    assert beautifier.process(input_content) == expected_output_content, "ConditionalJump.txt processing failed"
+    assert beautifier.process(input_content) == expected_output_content, file_name + " processing failed"
+
+def file_processing():
+    files = ["useOfUninitialisedValue.txt", "memoryLeaks.txt", "conditionalJump.txt", "invalidFree.txt", "invalidWriteRead.txt"]
+    for f in files:
+        _file_processing(f)
 
 if __name__ == "__main__":
     color_test()
