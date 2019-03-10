@@ -5,7 +5,7 @@
     [90mby main (main.c:17)[39m
    [1mUninitialised value was created by a heap allocation[0m
    at malloc [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
-    [90m[32mby nodo_crear (lista.c:45)[39m[39m
+    [90m[1m[32mby nodo_crear (lista.c:45)[39m[0m[39m
     [90mby lista_insertar_primero (lista.c:75)[39m
     [90mby prueba_iterador_tres_valores (pruebas_catedra.c:410)[39m
     [90mby pruebas_lista_catedra (pruebas_catedra.c:832)[39m
