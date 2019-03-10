@@ -8,7 +8,7 @@ def color_test():
     input_string = "Hello World"
     assert colorer.add_red_color(input_string) == Fore.RED + input_string + Fore.RESET, "Red color failed"
     assert colorer.add_green_color(input_string) == Fore.GREEN + input_string + Fore.RESET, "Green color failed"
-    assert colorer.add_yellow_color(input_string) == Fore.LIGHTYELLOW_EX + input_string + Fore.RESET, "Yellow color failed"
+    assert colorer.add_orange_color(input_string) == Fore.LIGHTRED_EX + input_string + Fore.RESET, "Orange color failed"
     assert colorer.add_grey_color(input_string) == Fore.LIGHTBLACK_EX + input_string + Fore.RESET, "Grey color failed"
 
 def style_test():
