@@ -77,6 +77,7 @@ class Beautifier:
         first_important_line_of_problem = False
         first_line_of_root_cause = False
         first_importat_line_of_root_cause = False
+        orange_colored = False
         for line in lines:
             temp = self.textEditor.remove_address(self.textEditor.remove_PID(line))
             # Is HEAP SUMMARY header?
@@ -98,6 +99,8 @@ class Beautifier:
                 continue
             # Is root cause?
             if (self._isRootCause(temp)):
+                if ("free'd" in temp):
+                    orange_colored = True
                 temp = self.textEditor.add_spaces(self.styler.add_bold(temp), 3)
                 first_line_of_root_cause = True
                 first_importat_line_of_root_cause = True
@@ -118,7 +121,11 @@ class Beautifier:
             if (first_importat_line_of_root_cause):
                 # If it is not a .so line
                 if (re.sub(r'\(.*\.so\)', '', temp) == temp):
-                    temp = self.colorer.add_green_color(temp)
+                    if (orange_colored):
+                        temp = self.colorer.add_orange_color(temp)
+                        orange_colored = False
+                    else:
+                        temp = self.colorer.add_green_color(temp)
                     first_importat_line_of_root_cause = False
             # Is the first line of the problem?
             if (first_line_of_problem):
