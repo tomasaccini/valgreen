@@ -91,7 +91,7 @@ class Beautifier:
                 continue
             # Is title?
             if (self._isProblemTitle(temp)):
-                temp = self.textEditor.add_spaces(self.styler.add_bold(self.textEditor.add_number(temp, problem_numbering)), 1)
+                temp = self.textEditor.add_spaces(self.styler.add_bold(self.textEditor.add_number(temp, problem_numbering)), 2 - len(str(problem_numbering)))
                 problem_numbering += 1
                 first_line_of_problem = True
                 first_important_line_of_problem = True
