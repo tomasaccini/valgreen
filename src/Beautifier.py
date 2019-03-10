@@ -126,6 +126,7 @@ class Beautifier:
                         orange_colored = False
                     else:
                         temp = self.colorer.add_green_color(temp)
+                    temp = self.styler.add_bold(temp)
                     first_importat_line_of_root_cause = False
             # Is the first line of the problem?
             if (first_line_of_problem):
