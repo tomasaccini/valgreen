@@ -6,7 +6,7 @@
     [90mby main (main.c:28)[39m
    [1mAddress 0x531c440 is 0 bytes inside a block of size 80 free'd[0m
    at free [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
-    [90m[32mby prueba_crear_arr (pruebas_catedra.c:259)[39m[39m
+    [90m[91mby prueba_crear_arr (pruebas_catedra.c:259)[39m[39m
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
    [1mBlock was alloc'd at[0m
