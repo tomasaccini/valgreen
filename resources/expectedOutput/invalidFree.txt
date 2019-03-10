@@ -1,4 +1,4 @@
- [1m1-Invalid free() / delete / delete[] / realloc()[0m
+ [1m1)Invalid free() / delete / delete[] / realloc()[0m
    at free [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
     [90m[31m[1mby heap_destruir (heap.c:94)[0m[39m[39m
     [90mby prueba_crear_arr (pruebas_catedra.c:271)[39m

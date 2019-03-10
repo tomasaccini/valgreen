@@ -21,7 +21,7 @@ def text_editor_test():
     input_string = "==22== Conditional jump or move depends on uninitialised value(s)"
     address_string = "by 0x11D3DB: join (strutil.c:85)"
     assert text_editor.remove_PID(input_string) == "Conditional jump or move depends on uninitialised value(s)", "Remove PID failed"
-    assert text_editor.add_number(input_string, 3) == "3-" + input_string, "Add line number failed"
+    assert text_editor.add_number(input_string, 3) == "3)" + input_string, "Add line number failed"
     assert text_editor.add_spaces(input_string, 3) == '   ' + input_string, "Add space failed"
     assert text_editor.remove_address(address_string) == "by join (strutil.c:85)", "Remove address failed"
 
