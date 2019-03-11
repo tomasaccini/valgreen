@@ -89,6 +89,15 @@ class Beautifier:
                 temp = self.textEditor.add_spaces(self.styler.add_bold(temp), 4)
                 result += temp + '\n'
                 continue
+            # LEAK SUMMARY
+            if ("All heap blocks were freed -- no leaks are possible" in temp or "ERROR SUMMARY: 0 errors from" in temp):
+                temp = self.textEditor.add_spaces(self.styler.add_bold(self.colorer.add_green_color(temp)), 4)
+                result += temp + '\n'
+                continue
+            if ("definitely lost: " in temp or "ERROR SUMMARY: " in temp):
+                temp = self.textEditor.add_spaces(self.styler.add_bold(self.colorer.add_red_color(temp)), 4)
+                result += temp + '\n'
+                continue
             # Is title?
             if (self._isProblemTitle(temp)):
                 temp = self.textEditor.add_spaces(self.styler.add_bold(self.textEditor.add_number(temp, problem_numbering)), 2 - len(str(problem_numbering)))

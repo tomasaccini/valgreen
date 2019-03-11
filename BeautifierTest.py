@@ -34,7 +34,7 @@ def _file_processing(file_name):
     assert beautifier.process(input_content) == expected_output_content, file_name + " processing failed"
 
 def file_processing():
-    files = ["useOfUninitialisedValue.txt", "memoryLeaks.txt", "conditionalJump.txt", "invalidFree.txt", "invalidWriteRead.txt"]
+    files = ["heapSummaryWithoutLeaks.txt", "memoryLeaks.txt", "useOfUninitialisedValue.txt", "conditionalJump.txt", "invalidFree.txt", "invalidWriteRead.txt"]
     for f in files:
         _file_processing(f)
 

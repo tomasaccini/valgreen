@@ -172,11 +172,11 @@
     [90mby main (main.c:23)[39m
     [1m[0m
     [90mLEAK SUMMARY:[39m
-    [90mdefinitely lost: 360,720 bytes in 15,030 blocks[39m
+    [1m[31mdefinitely lost: 360,720 bytes in 15,030 blocks[39m[0m
     [90mindirectly lost: 0 bytes in 0 blocks[39m
     [90mpossibly lost: 0 bytes in 0 blocks[39m
     [90mstill reachable: 0 bytes in 0 blocks[39m
     [90msuppressed: 0 bytes in 0 blocks[39m
     [1m[0m
     [90mFor counts of detected and suppressed errors, rerun with: -v[39m
-    [90mERROR SUMMARY: 26 errors from 26 contexts (suppressed: 0 from 0)[39m
+    [1m[31mERROR SUMMARY: 26 errors from 26 contexts (suppressed: 0 from 0)[39m[0m
