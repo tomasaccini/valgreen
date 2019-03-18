@@ -8,7 +8,7 @@ def color_test():
     input_string = "Hello World"
     assert colorer.add_red_color(input_string) == Fore.RED + input_string + Fore.RESET, "Red color failed"
     assert colorer.add_green_color(input_string) == Fore.GREEN + input_string + Fore.RESET, "Green color failed"
-    assert colorer.add_orange_color(input_string) == Fore.LIGHTRED_EX + input_string + Fore.RESET, "Orange color failed"
+    assert colorer.add_orange_color(input_string) == Fore.YELLOW + input_string + Fore.RESET, "Orange color failed"
     assert colorer.add_grey_color(input_string) == Fore.LIGHTBLACK_EX + input_string + Fore.RESET, "Grey color failed"
 
 def style_test():
@@ -21,7 +21,7 @@ def text_editor_test():
     input_string = "==22== Conditional jump or move depends on uninitialised value(s)"
     address_string = "by 0x11D3DB: join (strutil.c:85)"
     assert text_editor.remove_PID(input_string) == "Conditional jump or move depends on uninitialised value(s)", "Remove PID failed"
-    assert text_editor.add_number(input_string, 3) == "3)" + input_string, "Add line number failed"
+    assert text_editor.add_number(input_string, 3) == "3) " + input_string, "Add line number failed"
     assert text_editor.add_spaces(input_string, 3) == '   ' + input_string, "Add space failed"
     assert text_editor.remove_address(address_string) == "by join (strutil.c:85)", "Remove address failed"
 

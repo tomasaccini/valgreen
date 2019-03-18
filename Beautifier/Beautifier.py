@@ -11,7 +11,7 @@ class Colorer:
         return self._add_color(input_string, Fore.RED, Fore.RESET)
 
     def add_orange_color(self, input_string):
-        return self._add_color(input_string, Fore.LIGHTRED_EX, Fore.RESET)
+        return self._add_color(input_string, Fore.YELLOW, Fore.RESET)
 
     def add_green_color(self, input_string):
         return self._add_color(input_string, Fore.GREEN, Fore.RESET)

@@ -1,4 +1,4 @@
- [1m1)Use of uninitialised value of size 8[0m
+ [1m1) Use of uninitialised value of size 8[0m
    [31m[1mat lista_iter_ver_actual (lista.c:141)[0m[39m
     [90mby prueba_iterador_tres_valores (pruebas_catedra.c:425)[39m
     [90mby pruebas_lista_catedra (pruebas_catedra.c:832)[39m

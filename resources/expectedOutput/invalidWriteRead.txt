@@ -1,11 +1,11 @@
- [1m1)Invalid write of size 8[0m
+ [1m1) Invalid write of size 8[0m
    [31m[1mat heap_encolar (heap.c:130)[0m[39m
     [90mby prueba_crear_arr (pruebas_catedra.c:260)[39m
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
    [1mAddress 0x531c490 is 0 bytes after a block of size 80 free'd[0m
    at free [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
-    [90m[1m[91mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
+    [90m[1m[33mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
    [1mBlock was alloc'd at[0m
@@ -15,7 +15,7 @@
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
     [1m[0m
- [1m2)Invalid read of size 8[0m
+ [1m2) Invalid read of size 8[0m
    [31m[1mat upheap (heap.c:119)[0m[39m
     [90mby heap_encolar (heap.c:132)[39m
     [90mby prueba_crear_arr (pruebas_catedra.c:260)[39m
@@ -23,7 +23,7 @@
     [90mby main (main.c:28)[39m
    [1mAddress 0x531c490 is 0 bytes after a block of size 80 free'd[0m
    at free [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
-    [90m[1m[91mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
+    [90m[1m[33mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
    [1mBlock was alloc'd at[0m
@@ -33,7 +33,7 @@
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
     [1m[0m
- [1m3)Invalid read of size 8[0m
+ [1m3) Invalid read of size 8[0m
    [31m[1mat upheap (heap.c:119)[0m[39m
     [90mby heap_encolar (heap.c:132)[39m
     [90mby prueba_crear_arr (pruebas_catedra.c:260)[39m
@@ -41,7 +41,7 @@
     [90mby main (main.c:28)[39m
    [1mAddress 0x531c460 is 32 bytes inside a block of size 80 free'd[0m
    at free [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
-    [90m[1m[91mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
+    [90m[1m[33mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
    [1mBlock was alloc'd at[0m
@@ -51,7 +51,7 @@
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
     [1m[0m
- [1m4)Invalid read of size 8[0m
+ [1m4) Invalid read of size 8[0m
    [31m[1mat swap (heap.c:46)[0m[39m
     [90mby upheap (heap.c:120)[39m
     [90mby heap_encolar (heap.c:132)[39m
@@ -60,7 +60,7 @@
     [90mby main (main.c:28)[39m
    [1mAddress 0x531c460 is 32 bytes inside a block of size 80 free'd[0m
    at free [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
-    [90m[1m[91mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
+    [90m[1m[33mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
    [1mBlock was alloc'd at[0m
@@ -70,7 +70,7 @@
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
     [1m[0m
- [1m5)Invalid read of size 8[0m
+ [1m5) Invalid read of size 8[0m
    [31m[1mat swap (heap.c:47)[0m[39m
     [90mby upheap (heap.c:120)[39m
     [90mby heap_encolar (heap.c:132)[39m
@@ -79,7 +79,7 @@
     [90mby main (main.c:28)[39m
    [1mAddress 0x531c490 is 0 bytes after a block of size 80 free'd[0m
    at free [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
-    [90m[1m[91mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
+    [90m[1m[33mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
    [1mBlock was alloc'd at[0m
@@ -89,7 +89,7 @@
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
     [1m[0m
- [1m6)Invalid write of size 8[0m
+ [1m6) Invalid write of size 8[0m
    [31m[1mat swap (heap.c:47)[0m[39m
     [90mby upheap (heap.c:120)[39m
     [90mby heap_encolar (heap.c:132)[39m
@@ -98,7 +98,7 @@
     [90mby main (main.c:28)[39m
    [1mAddress 0x531c460 is 32 bytes inside a block of size 80 free'd[0m
    at free [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
-    [90m[1m[91mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
+    [90m[1m[33mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
    [1mBlock was alloc'd at[0m
@@ -108,7 +108,7 @@
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
     [1m[0m
- [1m7)Invalid write of size 8[0m
+ [1m7) Invalid write of size 8[0m
    [31m[1mat swap (heap.c:48)[0m[39m
     [90mby upheap (heap.c:120)[39m
     [90mby heap_encolar (heap.c:132)[39m
@@ -117,7 +117,7 @@
     [90mby main (main.c:28)[39m
    [1mAddress 0x531c490 is 0 bytes after a block of size 80 free'd[0m
    at free [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
-    [90m[1m[91mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
+    [90m[1m[33mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
    [1mBlock was alloc'd at[0m
@@ -128,14 +128,14 @@
     [90mby main (main.c:28)[39m
     [1m[0m
     [90mLibere arreglo original, y eso no afecta al heap... OK[39m
- [1m8)Invalid read of size 8[0m
+ [1m8) Invalid read of size 8[0m
    [31m[1mat heap_desencolar (heap.c:149)[0m[39m
     [90mby prueba_crear_arr (pruebas_catedra.c:263)[39m
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
    [1mAddress 0x531c440 is 0 bytes inside a block of size 80 free'd[0m
    at free [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
-    [90m[1m[91mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
+    [90m[1m[33mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
    [1mBlock was alloc'd at[0m
@@ -145,7 +145,7 @@
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
     [1m[0m
- [1m9)Invalid read of size 8[0m
+ [1m9) Invalid read of size 8[0m
    [31m[1mat swap (heap.c:47)[0m[39m
     [90mby heap_desencolar (heap.c:150)[39m
     [90mby prueba_crear_arr (pruebas_catedra.c:263)[39m
@@ -153,7 +153,7 @@
     [90mby main (main.c:28)[39m
    [1mAddress 0x531c490 is 0 bytes after a block of size 80 free'd[0m
    at free [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
-    [90m[1m[91mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
+    [90m[1m[33mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
    [1mBlock was alloc'd at[0m
@@ -163,7 +163,7 @@
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
     [1m[0m
-[1m10)Invalid write of size 8[0m
+[1m10) Invalid write of size 8[0m
    [31m[1mat swap (heap.c:47)[0m[39m
     [90mby heap_desencolar (heap.c:150)[39m
     [90mby prueba_crear_arr (pruebas_catedra.c:263)[39m
@@ -171,7 +171,7 @@
     [90mby main (main.c:28)[39m
    [1mAddress 0x531c440 is 0 bytes inside a block of size 80 free'd[0m
    at free [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
-    [90m[1m[91mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
+    [90m[1m[33mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
    [1mBlock was alloc'd at[0m
@@ -181,7 +181,7 @@
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
     [1m[0m
-[1m11)Invalid write of size 8[0m
+[1m11) Invalid write of size 8[0m
    [31m[1mat swap (heap.c:48)[0m[39m
     [90mby heap_desencolar (heap.c:150)[39m
     [90mby prueba_crear_arr (pruebas_catedra.c:263)[39m
@@ -189,7 +189,7 @@
     [90mby main (main.c:28)[39m
    [1mAddress 0x531c490 is 0 bytes after a block of size 80 free'd[0m
    at free [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
-    [90m[1m[91mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
+    [90m[1m[33mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
    [1mBlock was alloc'd at[0m
@@ -199,14 +199,14 @@
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
     [1m[0m
-[1m12)Invalid write of size 8[0m
+[1m12) Invalid write of size 8[0m
    [31m[1mat heap_desencolar (heap.c:151)[0m[39m
     [90mby prueba_crear_arr (pruebas_catedra.c:263)[39m
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
    [1mAddress 0x531c490 is 0 bytes after a block of size 80 free'd[0m
    at free [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
-    [90m[1m[91mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
+    [90m[1m[33mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
    [1mBlock was alloc'd at[0m
@@ -216,14 +216,14 @@
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
     [1m[0m
-[1m13)Invalid read of size 8[0m
+[1m13) Invalid read of size 8[0m
    [31m[1mat heap_desencolar (heap.c:149)[0m[39m
     [90mby prueba_crear_arr (pruebas_catedra.c:265)[39m
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
    [1mAddress 0x531c440 is 0 bytes inside a block of size 80 free'd[0m
    at free [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
-    [90m[1m[91mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
+    [90m[1m[33mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
    [1mBlock was alloc'd at[0m
@@ -233,7 +233,7 @@
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
     [1m[0m
-[1m14)Invalid read of size 8[0m
+[1m14) Invalid read of size 8[0m
    [31m[1mat swap (heap.c:47)[0m[39m
     [90mby heap_desencolar (heap.c:150)[39m
     [90mby prueba_crear_arr (pruebas_catedra.c:265)[39m
@@ -241,7 +241,7 @@
     [90mby main (main.c:28)[39m
    [1mAddress 0x531c488 is 72 bytes inside a block of size 80 free'd[0m
    at free [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
-    [90m[1m[91mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
+    [90m[1m[33mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
    [1mBlock was alloc'd at[0m
@@ -251,7 +251,7 @@
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
     [1m[0m
-[1m15)Invalid write of size 8[0m
+[1m15) Invalid write of size 8[0m
    [31m[1mat swap (heap.c:47)[0m[39m
     [90mby heap_desencolar (heap.c:150)[39m
     [90mby prueba_crear_arr (pruebas_catedra.c:265)[39m
@@ -259,7 +259,7 @@
     [90mby main (main.c:28)[39m
    [1mAddress 0x531c440 is 0 bytes inside a block of size 80 free'd[0m
    at free [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
-    [90m[1m[91mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
+    [90m[1m[33mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
    [1mBlock was alloc'd at[0m
@@ -269,7 +269,7 @@
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
     [1m[0m
-[1m16)Invalid write of size 8[0m
+[1m16) Invalid write of size 8[0m
    [31m[1mat swap (heap.c:48)[0m[39m
     [90mby heap_desencolar (heap.c:150)[39m
     [90mby prueba_crear_arr (pruebas_catedra.c:265)[39m
@@ -277,7 +277,7 @@
     [90mby main (main.c:28)[39m
    [1mAddress 0x531c488 is 72 bytes inside a block of size 80 free'd[0m
    at free [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
-    [90m[1m[91mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
+    [90m[1m[33mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
    [1mBlock was alloc'd at[0m
@@ -287,14 +287,14 @@
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
     [1m[0m
-[1m17)Invalid write of size 8[0m
+[1m17) Invalid write of size 8[0m
    [31m[1mat heap_desencolar (heap.c:151)[0m[39m
     [90mby prueba_crear_arr (pruebas_catedra.c:265)[39m
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
    [1mAddress 0x531c488 is 72 bytes inside a block of size 80 free'd[0m
    at free [90m(in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)[39m
-    [90m[1m[91mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
+    [90m[1m[33mby prueba_crear_arr (pruebas_catedra.c:259)[39m[0m[39m
     [90mby pruebas_heap_catedra (pruebas_catedra.c:283)[39m
     [90mby main (main.c:28)[39m
    [1mBlock was alloc'd at[0m
