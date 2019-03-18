@@ -34,7 +34,7 @@ class TextEditor:
         return re.sub(r'0x.*: ', '', input_string)
 
     def add_number(self, input_string, i):
-        return str(i) + ")" + input_string
+        return str(i) + ") " + input_string
         
     def add_spaces(self, input_string, n):
         return ' ' * n + input_string
@@ -149,6 +149,4 @@ class Beautifier:
             else:
                 temp = self.textEditor.add_spaces(self.colorer.add_grey_color(temp), 4)
             result += temp + '\n'
-        print(result)
-        #print("=========================================================")
         return result

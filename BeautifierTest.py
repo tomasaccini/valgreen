@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from colorama import Fore, Style
-from src.Beautifier import Colorer, Styler, TextEditor, Beautifier
+from Beautifier.Beautifier import Colorer, Styler, TextEditor, Beautifier
 
 def color_test():
     colorer = Colorer()

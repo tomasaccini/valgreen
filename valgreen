@@ -3,23 +3,9 @@
 import argparse
 import subprocess
 import re
-from colorama import Fore, Style
+from Beautifier.Beautifier import Beautifier
 
-
-VFLAGS = ["--leak-check=full", "--track-origins=yes", "--show-reachable=yes"]
-
-def clean_output(output):
-    verbose = r'==\d{1,5}=='
-    return re.sub(verbose,'',output)
-
-
-def color_output(output):
-    error_sumary = re.compile(r'ERROR SUMMARY:.*')
-    output = error_sumary.sub(lambda x: Fore.RED + x.group() + Style.RESET_ALL, output)
-    
-    file_and_line = re.compile(r'\(.*.c:\d{1,5}\)')
-    output = file_and_line.sub(lambda x: Fore.GREEN + x.group() + Style.RESET_ALL, output)
-    return output
+VFLAGS = ["--leak-check=full", "--track-origins=yes", "--show-reachable=yes", "--quiet"]
 
 
 def call_valgrind(exec, flags=VFLAGS):
@@ -35,10 +21,9 @@ def valgreen():
     parser.add_argument('exec', help='Executable file passed to Valgrind', type=str)
     args = parser.parse_args()
     output = call_valgrind(args.exec)
-    cleaned_output = clean_output(output)
-    colored_output = color_output(cleaned_output)
+    beautifier = Beautifier()
+    colored_output = beautifier.process(output)
     print(colored_output)
-
 
 if __name__ == "__main__":
     valgreen()
