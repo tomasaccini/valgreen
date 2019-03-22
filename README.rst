@@ -7,8 +7,6 @@ Valgreen
 
 Valgrind output readable for human beings
 
-The main idea of this simple project is to make a little bit easier to understand the big unreadable Valgrind output.
-
 Installation
 =====
 
