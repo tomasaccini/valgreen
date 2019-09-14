@@ -7,15 +7,25 @@ Valgreen
 
 Valgrind output readable for human beings
 
+With *Valgreen*:
+
+.. image:: https://i.imgur.com/V0XrzXp.gif
+    :target: https://asciinema.org/a/268317
+
+With *Valgrind*:
+
+.. image:: https://i.imgur.com/rVXnlEB.gif
+    :target: https://asciinema.org/a/vnZy9cmp3VbkPhPzwfoGBRGlB
+
 Installation
-=====
+============
 
 As simple as :code:`pip3 install valgreen`. Keep in mind you need a working Valgrind installation!
 
 Usage
 =====
 
-Instead of :code:`valgrind --leak-check=full --track-origins=yes --show-reachable=yes ./exec` do :code:`valgreen ./exec`
+Just write :code:`valgreen ./exec` instead of :code:`valgrind --leak-check=full --track-origins=yes --show-reachable=yes ./exec`
 
 Example
 =======

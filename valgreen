@@ -5,7 +5,7 @@ import subprocess
 import re
 from Beautifier.Beautifier import Beautifier
 
-VFLAGS = ["--leak-check=full", "--track-origins=yes", "--show-reachable=yes", "--quiet"]
+VFLAGS = ["--leak-check=full", "--track-origins=yes", "--show-reachable=yes"]
 
 
 def call_valgrind(exec, flags=VFLAGS):
