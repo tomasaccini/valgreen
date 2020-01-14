@@ -9,7 +9,7 @@ VFLAGS = ["--leak-check=full", "--track-origins=yes", "--show-reachable=yes"]
 
 
 def call_valgrind(exec, flags=VFLAGS):
-    valgrind = subprocess.Popen(["valgrind", *flags].extend(exec),
+    valgrind = subprocess.Popen(["valgrind", *flags, *exec],
                                 stdin=subprocess.DEVNULL, 
                                 stdout=subprocess.PIPE, 
                                 stderr=subprocess.STDOUT)
